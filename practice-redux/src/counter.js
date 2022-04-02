@@ -1,13 +1,13 @@
-import React from 'react'
+import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import {decrement, increment} from './actoins'
 // rewrite with components classes!!
-const Counter = () =>{
+const Counter = ({count, increment, decrement}) =>{
   return(
       <p>
-       O contador {this.props.count}
-       <button onClick={this.props.increment}>+</button>
-       <button onClick={this.props.decrement}>-</button>   
+       O contador {count}
+       <button onClick={increment}>+</button>
+       <button onClick={decrement}>-</button>   
       </p>
   )
 }
