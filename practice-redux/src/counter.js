@@ -2,6 +2,7 @@ import React from 'react'
 import {connect} from 'react-redux'
 import {decrement, increment} from './actoins'
 // rewrite with components classes!!
+// very interesting to practice and reming about that!
 const Counter = ({count, increment, decrement}) =>{
   return(
       <p>
